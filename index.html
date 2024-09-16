@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lern</title>
+    <style>
+        .lives img{
+            height: 30px;
+            width: 30px;
+        }
+
+        .board {
+            background-color: rgb(9, 9, 61);
+        }
+
+        .cell {
+            height: 40px;
+            width: 40px;
+        }
+
+        .cell img {
+            height: auto;
+            width: 30px;
+        }
+
+        .floor {
+            background-color: rgb(0, 0, 0);
+        }
+        .wall {
+            background-color: rgb(0, 17, 255);
+        } 
+        
+    </style>
+</head>
+<body  onkeyup="onKey(event)" onload= "onInit() ">
+    <h1>Pac-Man</h1>
+    <h2>score:<span class="score">0</span>   
+        lives:<span class="lives"></span></h2>
+    <table class="board">
+        <tbody class="board-content"></tbody>
+    </table>
+    <script src="js/main.js"></script>
+</body>
+</html>
